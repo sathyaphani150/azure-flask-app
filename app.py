@@ -4,7 +4,11 @@ import os
 app = Flask(__name__)
 
 # Sample in-memory data
-users = []
+users = [
+    {"name": "Jack", "role": "Developer"},
+    {"name": "Alice", "role": "Tester"},
+    {"name": "Bob", "role": "Manager"}
+]
 
 @app.route("/")
 def home():
